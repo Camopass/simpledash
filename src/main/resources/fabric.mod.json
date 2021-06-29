@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "simpledash",
+  "version": "${version}",
+
+  "name": "Simple Dash",
+  "description": "Simple Dash Mod",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/simpleDash/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {"adapter": "kotlin",
+      "value": "net.camopass.simpledash.Dash"
+      }
+    ],
+    "client": [
+      {"adapter": "kotlin",
+      "value": "net.camopass.simpledash.DashClient"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
